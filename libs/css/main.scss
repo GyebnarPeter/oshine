@@ -86,17 +86,58 @@ nav {
     }
 }
 
+
+/* --------------------------- FOOTER --------------------------- */
+
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-social {
+    padding: 25px 0;
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+    div {
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .4s;
+        cursor: pointer;
+    }
+    
+    div:hover {
+        background: $red;
+    }
+    
+    svg {
+        width: 13px;
+        height: 13px;
+        fill: white;
+    }
+}
+
+
 main {
-    height: 1000px;
+    height: 700px;
     width: 90%;
     border: 3px solid red;
-    margin: 10px auto;
+    margin: 110px auto;
 }
 
 @media screen and (max-width: 1200px) {
 
     .desktop-header {
-        //display: none;
+        display: none;
         border: none;
 
         .header-logo-desktop {

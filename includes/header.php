@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
     <link rel="stylesheet" href="./libs/css/main.css">
+    <link rel="stylesheet" href="./libs/css/simple-lightbox.css">
     <title>Oshine</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
     <div class="mobile-header">
 
         <div class="header-logo-mobile">
-            <a href="#"><img src="./img/logo.png" alt="logo"></a>
+            <a href="index.php"><img src="./img/logo.png" alt="logo"></a>
         </div>
 
         <div class="menu-btn">
@@ -29,19 +30,19 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">home</a>
+                    <a href="index.php">home</a>
                 </li>
                 <li>
                     <a href="#">about</a>
                 </li>
                 <li class="header-logo-desktop">
-                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                    <a href="index.php"><img src="./img/logo.png" alt="logo"></a>
                 </li>
                 <li>
                     <a href="#">blog</a>
                 </li>
                 <li>
-                    <a href="#">contact</a>
+                    <a href="contact.php">contact</a>
                 </li>
             </ul>
         </nav>

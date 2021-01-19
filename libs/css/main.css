@@ -10,6 +10,7 @@ font-family: 'Open Sans', sans-serif;
 
 body {
   margin: 0;
+  font-family: "Lora", serif;
 }
 
 /* --------------------------- HEADER --------------------------- */
@@ -109,11 +110,145 @@ footer {
   fill: white;
 }
 
-main {
-  height: 700px;
-  width: 90%;
-  border: 3px solid red;
-  margin: 110px auto;
+/* --------------------------- MAIN GALLERY --------------------------- */
+.main-gallery {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  column-count: 4;
+  column-gap: 0px;
+  line-height: 0;
+}
+.main-gallery img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  filter: grayscale(100%);
+  transition: 0.5s;
+  padding: 3px;
+}
+.main-gallery img:hover {
+  filter: grayscale(0);
+}
+
+/* --------------------------- CONTACT --------------------------- */
+.contact-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-head h1 {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 22px;
+  margin: 50px;
+}
+.contact-head p {
+  font-family: "Lora", serif;
+  font-style: italic;
+  text-align: center;
+  margin: 50px 0;
+  width: 70%;
+}
+.contact-head .square {
+  display: flex;
+  align-items: center;
+}
+.contact-head .square span {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: 0 30px;
+  background: black;
+  transform: rotate(45deg);
+}
+.contact-head .square::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+}
+.contact-head .square::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+}
+
+.contact-body {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-body iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-box {
+  width: 48%;
+}
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-box form input, .contact-box form textarea {
+  background: #f4f9f8;
+  border: none;
+  margin-bottom: 10px;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+.contact-box form textarea {
+  height: 150px;
+  font-size: 14px;
+}
+.contact-box form input[type=submit] {
+  width: 100px;
+  cursor: pointer;
+  background: black;
+  color: #f4f9f8;
+  transition: 0.3s;
+  border: none;
+  -webkit-appearance: none;
+}
+.contact-box form input[type=submit]:hover {
+  background: #f4f9f8;
+  color: black;
+}
+
+.contact-details {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 100px 0;
+}
+.contact-details h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 50px;
+  font-family: "Dosis", sans-serif;
+  color: #222222;
+}
+.contact-details span {
+  display: block;
+  font-size: 14px;
+  font-weight: 200;
+  color: #2d2d2d;
+  text-decoration-skip: unset;
+  -webkit-text-fill-color: #2d2d2d;
 }
 
 @media screen and (max-width: 1200px) {
@@ -135,6 +270,38 @@ main {
 
   .mobile-header {
     display: flex;
+  }
+
+  .main-gallery {
+    padding: 0 15px;
+    column-count: 3;
+  }
+
+  .contact-wrapper {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main-gallery {
+    column-count: 2;
+  }
+
+  .contact-head p {
+    width: 90%;
+  }
+
+  .contact-body {
+    flex-direction: column-reverse;
+  }
+
+  .contact-box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-gallery {
+    column-count: 1;
   }
 }
 

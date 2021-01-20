@@ -33,10 +33,16 @@
                     <a href="index.php">home</a>
                 </li>
                 <li>
-                    <a href="#">about</a>
+                    <a href="about.php">about</a>
+                </li>
+                <li>
+                    <a href="#">services</a>
                 </li>
                 <li class="header-logo-desktop">
                     <a href="index.php"><img src="./img/logo.png" alt="logo"></a>
+                </li>
+                <li>
+                    <a href="portfolio.php">portfolio</a>
                 </li>
                 <li>
                     <a href="#">blog</a>

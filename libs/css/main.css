@@ -157,32 +157,6 @@ footer {
   margin: 50px 0;
   width: 70%;
 }
-.contact-head .square {
-  display: flex;
-  align-items: center;
-}
-.contact-head .square span {
-  display: inline-block;
-  width: 11px;
-  height: 11px;
-  margin: 0 30px;
-  background: black;
-  transform: rotate(45deg);
-}
-.contact-head .square::before {
-  content: "";
-  width: 50px;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.2);
-  display: inline-flex;
-}
-.contact-head .square::after {
-  content: "";
-  width: 50px;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.2);
-  display: inline-flex;
-}
 
 .contact-body {
   width: 100%;
@@ -251,6 +225,168 @@ footer {
   -webkit-text-fill-color: #2d2d2d;
 }
 
+/* --------------------------- ABOUT --------------------------- */
+.about-head-wrapper {
+  width: 100%;
+  background: url("../../img/about-head-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.about-head {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  padding: 100px 0;
+}
+.about-head h1 {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.7em;
+}
+.about-head h3 {
+  width: 50%;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+  margin: 30px 0;
+}
+.about-head p {
+  width: 50%;
+  line-height: 2;
+  font-size: 14px;
+}
+.about-head a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  border: 2px solid white;
+  padding: 15px 20px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.about-head a:hover {
+  background: white;
+  color: black;
+}
+
+.about-body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+}
+.about-body h3 {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.about-body ul {
+  padding-left: 20px;
+}
+.about-body ul li {
+  margin: 10px 0;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.client {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.editorials {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.instagram-shots {
+  flex-grow: 2;
+  flex-basis: 0;
+}
+
+.about-gallery {
+  column-count: 5;
+  column-gap: 5px;
+  line-height: 0;
+}
+.about-gallery img {
+  width: 100%;
+  filter: grayscale(100%);
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+.about-gallery img:hover {
+  filter: initial;
+}
+
+/* --------------------------- PORTFOLIO --------------------------- */
+.portfolio-head h1 {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 22px;
+  margin: 50px;
+  text-align: center;
+}
+
+.portfolio-body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto;
+  column-count: 2;
+}
+
+.portfolio-box {
+  text-align: center;
+  margin-bottom: 100px;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+}
+.portfolio-box h2 {
+  font-weight: 400;
+}
+.portfolio-box img {
+  width: 100%;
+}
+.portfolio-box a {
+  text-decoration: none;
+  color: white;
+  background: #db2e2e;
+  font-size: 14px;
+  padding: 15px 20px;
+  margin-top: 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.portfolio-box a:hover {
+  background: #666666;
+}
+
+/* --------------------------- REUSABLE STYLES --------------------------- */
+.square-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.square-decoration div {
+  width: 11px;
+  height: 11px;
+  margin: 0 30px;
+  background: black;
+  transform: rotate(45deg);
+}
+.square-decoration span {
+  width: 60px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 1200px) {
   .desktop-header {
     display: none;
@@ -280,6 +416,18 @@ footer {
   .contact-wrapper {
     padding: 0 25px;
   }
+
+  .about-head {
+    padding: 100px 50px;
+  }
+
+  .about-body {
+    padding: 0 20px;
+  }
+
+  .portfolio-body {
+    padding: 0 20px;
+  }
 }
 @media screen and (max-width: 992px) {
   .main-gallery {
@@ -298,9 +446,41 @@ footer {
     width: 100%;
     margin-bottom: 30px;
   }
+
+  .about-body {
+    flex-direction: column;
+  }
+
+  .client, .editorials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instagram-shots h3 {
+    text-align: center;
+  }
+
+  .about-gallery {
+    column-count: 2;
+  }
 }
 @media screen and (max-width: 768px) {
   .main-gallery {
+    column-count: 1;
+  }
+
+  .about-head {
+    padding: 100px 20px;
+  }
+  .about-head h3 {
+    width: 100%;
+  }
+  .about-head p {
+    width: 100%;
+  }
+
+  .portfolio-body {
     column-count: 1;
   }
 }

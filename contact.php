@@ -4,7 +4,9 @@
 
     <div class="contact-head">
         <h1>get int touch</h1>
-        <div class="square">
+        <div class="square-decoration">
+            <span></span>
+            <div></div>
             <span></span>
         </div>
         <p>We love to listen and we are eagerly waiting to talk to you regarding your project. Get in touch with us if you have any queries and we will get back to you as soon as possible</p>

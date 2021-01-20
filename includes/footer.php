@@ -99,6 +99,7 @@
     <script src="./libs/js/simple-lightbox.min.js"></script>
     <script>
        var lightbox = new SimpleLightbox('.main-gallery a', {});
+       var lightbox = new SimpleLightbox('.about-gallery a', {});
     </script>
 
 </body>

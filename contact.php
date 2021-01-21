@@ -3,7 +3,7 @@
 <div class="contact-wrapper">
 
     <div class="contact-head">
-        <h1>get int touch</h1>
+        <h1>kapcsolat</h1>
         <div class="square-decoration">
             <span></span>
             <div></div>
@@ -19,19 +19,19 @@
 
         <div class="contact-box">
                 <form action="">
-                    <input type="text" name="name" id="name" placeholder="NAME">
+                    <input type="text" name="name" id="name" placeholder="NÉV">
                     <input type="email" name="email" id="email" placeholder="EMAIL">
-                    <input type="text" name="subject" id="subject" placeholder="SUBJECT">
-                    <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
+                    <input type="text" name="subject" id="subject" placeholder="TÁRGY">
+                    <textarea name="message" id="message" placeholder="ÜZENET"></textarea>
                     <input type="submit" name="submit" id="submit">
                 </form>
         </div>
     </div>
 
     <div class="contact-details">
-        <h3>address:</h3>
+        <h3>cím:</h3>
         <span>66 Nicholson street, Buffalo NY 14214</span>
-        <h3>phone:</h3>
+        <h3>telefon:</h3>
         <span>001-123-456-7890</span>
         <span>001-1800-123-4567</span>
         <h3>email:</h3>

@@ -7,14 +7,14 @@
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
     <link rel="stylesheet" href="./libs/css/main.css">
     <link rel="stylesheet" href="./libs/css/simple-lightbox.css">
-    <title>Oshine</title>
+    <title>Bóna Vilmos - Fotográfus</title>
 </head>
 <body>
 
 <header>
     <div class="mobile-header">
 
-        <div class="header-logo-mobile">
+        <div class="mobile-header-logo">
             <a href="index.php"><img src="./img/logo.png" alt="logo"></a>
         </div>
 
@@ -30,25 +30,25 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.php">home</a>
+                    <a href="index.php">kezdőlap</a>
                 </li>
                 <li>
-                    <a href="about.php">about</a>
+                    <a href="about.php">rólam</a>
                 </li>
                 <li>
-                    <a href="#">services</a>
+                    <a href="#">szolgáltatások</a>
                 </li>
-                <li class="header-logo-desktop">
+                <li class="desktop-header-logo">
                     <a href="index.php"><img src="./img/logo.png" alt="logo"></a>
                 </li>
                 <li>
-                    <a href="portfolio.php">portfolio</a>
+                    <a href="portfolio.php">portfólió</a>
                 </li>
                 <li>
-                    <a href="#">blog</a>
+                    <a href="blog.php">blog</a>
                 </li>
                 <li>
-                    <a href="contact.php">contact</a>
+                    <a href="contact.php">kapcsolat</a>
                 </li>
             </ul>
         </nav>

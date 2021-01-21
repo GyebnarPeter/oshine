@@ -23,6 +23,9 @@ header {
 .desktop-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.desktop-header img {
+  width: 300px;
+}
 
 nav {
   display: flex;
@@ -62,6 +65,9 @@ nav ul .header-logo-desktop {
   padding: 25px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: none;
+}
+.mobile-header img {
+  width: 300px;
 }
 
 .menu-btn {
@@ -367,6 +373,173 @@ footer {
   background: #666666;
 }
 
+/* --------------------------- BLOG --------------------------- */
+.blog-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-head h1 {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 22px;
+  margin: 50px;
+  text-align: center;
+}
+
+.blog-box {
+  width: 100%;
+  margin: 100px 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blog-box img {
+  width: 100%;
+}
+.blog-box h2 {
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.blog-box span {
+  font-style: italic;
+  font-size: 13px;
+}
+.blog-box span span {
+  color: #db2e2e;
+}
+.blog-box p {
+  width: 70%;
+  margin: 30px auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.blog-box a {
+  text-decoration: none;
+  color: white;
+  background: #db2e2e;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Dosis", sans-serif;
+  padding: 15px 20px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+  displaY: inline-block;
+}
+.blog-box a:hover {
+  background: #666666;
+}
+
+.blog-box:last-child {
+  border: none;
+}
+
+/* --------------------------- BLOG SECTION --------------------------- */
+.blog-section-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.blog-section-head {
+  text-align: center;
+  margin: 50px 0;
+}
+.blog-section-head img {
+  width: 100%;
+}
+.blog-section-head h1 {
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.blog-section-head span {
+  font-style: italic;
+  font-size: 13px;
+}
+.blog-section-head span span {
+  color: #db2e2e;
+}
+
+.blog-article {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #2d2d2d;
+  line-height: 2;
+}
+.blog-article p {
+  margin-bottom: 30px;
+}
+.blog-article ul {
+  margin-bottom: 30px;
+}
+.blog-article ul li {
+  margin-bottom: 10px;
+}
+
+.blog-social {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blog-social svg {
+  width: 12px;
+  height: 12px;
+  fill: #666666;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.blog-social svg:hover {
+  fill: #db2e2e;
+}
+
+.blog-form {
+  width: 70%;
+  margin: 0 auto;
+  color: #2d2d2d;
+}
+.blog-form h1 {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 22px;
+}
+.blog-form p {
+  font-size: 14px;
+}
+.blog-form form {
+  display: flex;
+  flex-direction: column;
+}
+.blog-form form textarea {
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-family: "Lora", serif;
+}
+.blog-form form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-family: "Lora", serif;
+}
+.blog-form form input[type=submit] {
+  width: 100px;
+  border: none;
+  background: #db2e2e;
+  color: white;
+}
+
 /* --------------------------- REUSABLE STYLES --------------------------- */
 .square-decoration {
   display: flex;
@@ -392,7 +565,7 @@ footer {
     display: none;
     border: none;
   }
-  .desktop-header .header-logo-desktop {
+  .desktop-header .desktop-header-logo {
     display: none;
   }
   .desktop-header ul {
@@ -426,6 +599,14 @@ footer {
   }
 
   .portfolio-body {
+    padding: 0 20px;
+  }
+
+  .blog-box {
+    padding: 0 20px;
+  }
+
+  .blog-section-head {
     padding: 0 20px;
   }
 }
@@ -466,6 +647,10 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
+  .mobile-header img {
+    width: 200px;
+  }
+
   .main-gallery {
     column-count: 1;
   }
@@ -482,6 +667,15 @@ footer {
 
   .portfolio-body {
     column-count: 1;
+  }
+
+  .blog-box p {
+    width: 90%;
+  }
+
+  .blog-form {
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
